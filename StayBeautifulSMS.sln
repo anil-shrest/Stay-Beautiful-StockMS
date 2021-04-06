@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StayBeautifulSMS", "StayBeautifulSMS.csproj", "{887EA990-A5B2-4C3F-BA67-E6F4740D15BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{887EA990-A5B2-4C3F-BA67-E6F4740D15BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887EA990-A5B2-4C3F-BA67-E6F4740D15BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887EA990-A5B2-4C3F-BA67-E6F4740D15BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887EA990-A5B2-4C3F-BA67-E6F4740D15BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B12D6D4E-B3FF-4BA6-90F9-11707B1CDA99}
+	EndGlobalSection
+EndGlobal

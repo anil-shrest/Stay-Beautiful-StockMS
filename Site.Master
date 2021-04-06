@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StayBeautifulSMS.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <%--<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+    <link rel="stylesheet" href="../Content/Site.css" />
+    <link rel="stylesheet" href="../Content/dashboard.css">
+
+
+    <%--for dashboard--%>
+<%--    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous" />--%>
+    
+
+
+</head>
+<body class="body-content">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="master-container">
+            <div id="sidebar" class="flex-left">
+                <div class="sidebar__title">
+                    <div class="sidebar__img">
+                        <img src="assets/logo.png" alt="logo" />
+                        <h1>STAY BEAUTIFUL</h1>
+                    </div>
+                    <i
+                        onclick="closeSidebar()"
+                        class="fa fa-times"
+                        id="sidebarIcon"
+                        aria-hidden="true"></i>
+                </div>
+
+                <div class="sidebar__menu">
+                    <div class="sidebar__link active_menu_link">
+                        <i class="fa fa-home"></i>
+                        <a href="#">Dashboard</a>
+                    </div>
+                    <h2>ADMIN</h2>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-user-secret" aria-hidden="true"></i>--%>
+                        <a href="www.google.com">Add Customer</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-building-o"></i>--%>
+                        <a href="#">Change Password</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-wrench"></i>--%>
+                        <a href="#">Employee Management</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-archive"></i>--%>
+                        <a href="#">Warehouse</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-handshake-o"></i>--%>
+                        <a href="#">Contracts</a>
+                    </div>
+                    <br />
+                    <h2>CONSUMER FORM</h2>
+                    <%--          <div class="sidebar__link">
+            <i class="fa fa-question"></i>
+            <a href="#">Requests</a>
+          </div>--%>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-sign-out"></i>--%>
+                        <a href="CustomerForm.aspx">Customer</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-calendar-check-o"></i>--%>
+                        <a href="#">Category</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-files-o"></i>--%>
+                        <a href="#">Item</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-files-o"></i>--%>
+                        <a href="#">Stock</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-files-o"></i>--%>
+                        <a href="#">Purchase</a>
+                    </div>
+                    <%--        <h2>PAYROLL</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-money"></i>
+            <a href="#">Payroll</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-briefcase"></i>
+            <a href="#">Paygrade</a>
+          </div>--%>
+                    <br />
+                    <div class="sidebar__logout">
+                        <i class="fa fa-power-off"></i>
+                        <a href="login.aspx">Log out</a>
+                    </div>
+                    <br />
+                    <%--                <div>
+                    <asp:Button Text="Button" runat="server"/>
+                </div>--%>
+                </div>
+            </div>
+            <div class="container body-content flex-right">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <hr />
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
