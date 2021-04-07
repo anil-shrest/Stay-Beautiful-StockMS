@@ -51,7 +51,7 @@
         <br />
         <div>
             <asp:GridView ID="customerGridView" runat="server" DataKeyNames="CUSTOMER_ID" Height="369px" HorizontalAlign="Justify" PageSize="15" Width="1136px" CellPadding="5" CellSpacing="5" GridLines="Horizontal">
-            </asp:GridView>
+                </asp:GridView>
         </div>
     </div>
 </asp:Content>
