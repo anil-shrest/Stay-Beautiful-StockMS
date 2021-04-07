@@ -146,6 +146,15 @@ namespace StayBeautifulSMS
             //this.BindGrid();
         }
 
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtCustomertName.Text = "";
+            txtCustomerAddress.Text = "";
+            txtCustomerPhone.Text = "";
+            txtCustomerEmail.Text = "";
+            txtCustomerType.Text = "";
+        }
+
         //protected void btninsert_Click(object sender, EventArgs e)
         //{
         //    string name = txtCustomertName.Text.ToString();

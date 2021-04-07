@@ -29,13 +29,13 @@
 }
 
 @font-face {
-    font-family: "Roboto Regular";
+    font-family: 'Montserrat Regular', sans-serif;
     src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 .default-body {
     box-sizing: border-box;
-    font-family: "Roboto Regular", sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
     width: 100%;
     /*src: url("../fonts/Roboto/Roboto-Regular.ttf");*/
 }

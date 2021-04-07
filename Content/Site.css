@@ -8,6 +8,30 @@
 /* Set some basic padding to keep content from hitting the edges */
 
 
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../fonts/montserrat/Montserrat-Light.otf") format("opentype");
+    /*font-weight: 400;*/
+}
+
+@font-face {
+    font-family: "Montserrat Semi-bold";
+    src: url("../fonts/montserrat/Montserrat-SemiBold.otf") format("opentype");
+    /*font-weight: 600;*/
+}
+
+@font-face {
+    font-family: "Montserrat Extra-bold";
+    src: url("../fonts/montserrat/Montserrat-ExtraBold.otf") format("opentype");
+    /*font-weight: 800;*/
+}
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: url("../fonts/montserrat//Montserrat-Black.otf") format("opentype");
+    /*font-weight: 900;*/
+}
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -32,3 +56,10 @@ textarea {
     }
 }
 
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Montserrat Extra-bold" !important;
+    /*font-weight: 500;*/
+    line-height: 1.1;
+    color: inherit;
+}

@@ -15,6 +15,7 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link rel="stylesheet" href="../Content/Site.css" />
     <link rel="stylesheet" href="../Content/dashboard.css">
+    <link rel="stylesheet" href="../Content/basicForms.css">
 
 </head>
 <body class="body-content">
