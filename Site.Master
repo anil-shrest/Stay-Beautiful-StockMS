@@ -100,7 +100,7 @@
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
-                        <a href="#">Stock</a>
+                        <a href="StockForm.aspx">Stock</a>
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
