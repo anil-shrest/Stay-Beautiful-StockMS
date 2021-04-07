@@ -395,10 +395,14 @@ main {
     /*font-family: "Roboto Regular", sans-serif;*/
 }
 
-.sidebar__link > i {
-    margin-right: 10px;
-    font-size: 18px;
-}
+    .sidebar__link > a hover{
+        color: lightseagreen;
+    }
+
+    .sidebar__link > i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
 
 .sidebar__logout {
     margin-top: 20px;

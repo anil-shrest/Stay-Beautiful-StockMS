@@ -13,27 +13,14 @@
     </asp:PlaceHolder>
 
     <webopt:BundleReference runat="server" Path="~/Content/css" />
-    <%--<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
     <link rel="stylesheet" href="../Content/Site.css" />
     <link rel="stylesheet" href="../Content/dashboard.css">
-
-
-    <%--for dashboard--%>
-<%--    <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous" />--%>
-    
-
 
 </head>
 <body class="body-content">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -46,7 +33,6 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
 
@@ -92,10 +78,10 @@
                     </div>
                     <br />
                     <h2>CONSUMER FORM</h2>
-                    <%--          <div class="sidebar__link">
-            <i class="fa fa-question"></i>
-            <a href="#">Requests</a>
-          </div>--%>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-sign-out"></i>--%>
+                        <a href="CustomerForm.aspx">User</a>
+                    </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-sign-out"></i>--%>
                         <a href="CustomerForm.aspx">Customer</a>
@@ -103,6 +89,10 @@
                     <div class="sidebar__link">
                         <%--<i class="fa fa-calendar-check-o"></i>--%>
                         <a href="#">Category</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <%--<i class="fa fa-calendar-check-o"></i>--%>
+                        <a href="#">Brand</a>
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
@@ -116,24 +106,12 @@
                         <%--<i class="fa fa-files-o"></i>--%>
                         <a href="#">Purchase</a>
                     </div>
-                    <%--        <h2>PAYROLL</h2>
-          <div class="sidebar__link">
-            <i class="fa fa-money"></i>
-            <a href="#">Payroll</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-briefcase"></i>
-            <a href="#">Paygrade</a>
-          </div>--%>
                     <br />
                     <div class="sidebar__logout">
                         <i class="fa fa-power-off"></i>
                         <a href="login.aspx">Log out</a>
                     </div>
                     <br />
-                    <%--                <div>
-                    <asp:Button Text="Button" runat="server"/>
-                </div>--%>
                 </div>
             </div>
             <div class="container body-content flex-right">

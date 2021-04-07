@@ -28,21 +28,17 @@ namespace StayBeautifulSMS
             OleDbConnection con = new OleDbConnection(constr);
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = @"SELECT Customer_Id, Customer_Name ""Customer Name"", Customer_Address ""Address"", Customer_Contact ""Phone"", Customer_type ""Customer Type"" FROM Customer";
+            cmd.CommandText = @"SELECT Customer_Id, Customer_Name ""Customer Name"", Customer_Address ""Address"", Customer_Contact ""Phone"", Customer_email ""Email"", Customer_type ""Customer Type"" FROM Customer";
             //cmd.CommandText = "SELECT * FROM [customer]";
             cmd.CommandType = CommandType.Text;
             DataTable dt = new DataTable("customer");
-
             using (OleDbDataReader sdr = cmd.ExecuteReader())
             {
                 dt.Load(sdr);
             }
-
             con.Close();
-
             customerGridView.DataSource = dt;
             customerGridView.DataBind();
-
         }
     }
 }
