@@ -96,7 +96,7 @@
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
-                        <a href="#">Item</a>
+                        <a href="Item.aspx">Item</a>
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
