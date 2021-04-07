@@ -10,9 +10,9 @@
         <div>
             <asp:Label runat="server" class="labels" ID="Label1" Font-Bold="True" Text="Brand Name"></asp:Label>
             <br />
-            <asp:TextBox ID="txtCustomertName" Height="25px" runat="server" Width="300px"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtCustomertName" ErrorMessage="Takes string value only!" ForeColor="Red" ValidationGroup="CustomerGroup" ValidationExpression="^[a-zA-Z ]+$"></asp:RegularExpressionValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCustomertName" ErrorMessage="Field must not be empty!" ForeColor="Red" ValidationGroup="CustomerGroup"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtBrandName" Height="25px" runat="server" Width="300px"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtBrandName" ErrorMessage="Takes string value only!" ForeColor="Red" ValidationGroup="CustomerGroup" ValidationExpression="^[a-zA-Z ]+$"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtBrandName" ErrorMessage="Field must not be empty!" ForeColor="Red" ValidationGroup="CustomerGroup"></asp:RequiredFieldValidator>
         </div>
         <br />
         <br />

@@ -11,7 +11,7 @@ namespace StayBeautifulSMS
 {
 
 
-    public partial class Item
+    public partial class Users
     {
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// txtItemName control.
+        /// txtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtItemName;
+        protected global::System.Web.UI.WebControls.TextBox txtUserName;
 
         /// <summary>
         /// RegularExpressionValidator1 control.
@@ -69,13 +69,13 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// txtItemDescription control.
+        /// txtUserAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtItemDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtUserAddress;
 
         /// <summary>
         /// RegularExpressionValidator2 control.
@@ -105,13 +105,31 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// txtStockDate control.
+        /// txtUserContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStockDate;
+        protected global::System.Web.UI.WebControls.TextBox txtUserContact;
+
+        /// <summary>
+        /// RegularExpressionValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
         /// Label5 control.
@@ -123,13 +141,13 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// txtAvailableQuantity control.
+        /// txtUserUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAvailableQuantity;
+        protected global::System.Web.UI.WebControls.TextBox txtUserUsername;
 
         /// <summary>
         /// RegularExpressionValidator4 control.
@@ -159,13 +177,13 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// txtItemRate control.
+        /// txtUserEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtItemRate;
+        protected global::System.Web.UI.WebControls.TextBox txtUserEmail;
 
         /// <summary>
         /// RegularExpressionValidator5 control.
@@ -186,12 +204,48 @@ namespace StayBeautifulSMS
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
         /// <summary>
-        /// itemGridView control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView itemGridView;
+        protected global::System.Web.UI.WebControls.Label Label7;
+
+        /// <summary>
+        /// txtUserType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUserType;
+
+        /// <summary>
+        /// RegularExpressionValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator6;
+
+        /// <summary>
+        /// RequiredFieldValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+
+        /// <summary>
+        /// userGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView userGridView;
     }
 }
