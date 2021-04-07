@@ -92,7 +92,7 @@
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-calendar-check-o"></i>--%>
-                        <a href="#">Brand</a>
+                        <a href="Brand.aspx">Brand</a>
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
