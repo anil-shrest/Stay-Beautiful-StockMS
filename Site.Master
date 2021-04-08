@@ -104,7 +104,7 @@
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-files-o"></i>--%>
-                        <a href="#">Purchase</a>
+                        <a href="PurchaseForm.aspx">Purchase</a>
                     </div>
                     <br />
                     <div class="sidebar__logout">
