@@ -50,8 +50,7 @@
         <br />
         <br />
         <div>
-            <asp:GridView ID="stockGridView" runat="server" DataKeyNames="Stock ID" Height="369px" HorizontalAlign="Justify" PageSize="15" Width="1136px" CellPadding="5" CellSpacing="5" GridLines="Horizontal">
-                </asp:GridView>
+            <asp:GridView ID="stockGridView" runat="server" DataKeyNames="Stock ID" Height="369px" HorizontalAlign="Justify" PageSize="15" Width="1136px" CellPadding="5" CellSpacing="5" GridLines="Horizontal"  OnRowEditing="stockGridView_RowEditing" OnRowCancelingEdit="stockGridView_RowCancelingEdit" OnRowUpdating="stockGridView_RowUpdating" AutoGenerateEditButton="true"></asp:GridView>
         </div>
     </div>
 </asp:Content>
