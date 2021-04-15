@@ -15,6 +15,7 @@ namespace StayBeautifulSMS
         static List<Dictionary<string, int>> purchase_items = new List<Dictionary<string, int>>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!this.IsPostBack)
             {
                 this.BindGrid();
@@ -41,7 +42,7 @@ namespace StayBeautifulSMS
             System.Diagnostics.Debug.WriteLine(sdr);
             sdr.Read();
             int qty = sdr.GetInt32(0);
-            if(qty >= quantity)
+            if(qty > quantity || qty == quantity)
             {
                 detail.Add("item", item);
                 detail.Add("quantity", quantity);
@@ -56,6 +57,11 @@ namespace StayBeautifulSMS
             }
             else
             {
+                string script = "alert(\"Specified item quantity unavailable!\");";
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "ConfirmSubmit", script);
+
+                ClientScript.RegisterOnSubmitStatement(this.GetType(),
+                                      "ConfirmSubmit", script);
                 System.Diagnostics.Debug.WriteLine("Item quantity specified not available.");
             }
             
@@ -116,14 +122,24 @@ namespace StayBeautifulSMS
                 {
                     int item_id = entry["item"];
                     int quantity = entry["quantity"];
-                    OleDbCommand cmd = new OleDbCommand("Insert into Purchase_Detail(purchase_id, item_id, purchased_quantity) Values(" + pur_id + "," + item_id + ", " + quantity + ")");
-                    cmd.Connection = con;
-                    cmd.ExecuteNonQuery();
+                    OleDbCommand cmdinsert = new OleDbCommand("Insert into Purchase_Detail(purchase_id, item_id, purchased_quantity) Values(" + pur_id + "," + item_id + ", " + quantity + ")");
+                    OleDbCommand cmdupdate = new OleDbCommand("Update Items set available_quantity = available_quantity - "+quantity+" where item_id = "+item_id);
+                    cmdinsert.Connection = con;
+                    cmdupdate.Connection = con;
+                    cmdinsert.ExecuteNonQuery();
+                    cmdupdate.ExecuteNonQuery();
                 }
 
 
                 con.Close();
+                purchase_items.Clear();
+                purchaseItemGridView.DataSource = null;
+                purchaseItemGridView.DataBind();
+                Response.Redirect("PurchaseBill.aspx?id=" +pur_id);
+                
             }
+
+            
         }
 
 

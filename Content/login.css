@@ -311,6 +311,7 @@ button {
 }
 
 .sign-up {
+    overflow-y: scroll;
     -webkit-transform: translate3d(-900px, 0, 0);
     transform: translate3d(-900px, 0, 0);
 }
@@ -318,4 +319,8 @@ button {
 .cont.s-signup .sign-up {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.sign-up::-webkit-scrollbar {
+    display: none;
 }

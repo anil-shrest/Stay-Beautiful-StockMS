@@ -14,15 +14,17 @@
   <div class="cont">
     <div class="form sign-in">
       <h2>Sign In</h2>
+        <form id="signin_form">
       <label>
         <span>Email Address</span>
-        <input type="email" name="email"/>
+        <input id="txtEmail" type="email" name="email"/>
       </label>
       <label>
         <span>Password</span>
-        <input type="password" name="password"/>
+        <input id="txtPassword" type="password" name="password"/>
       </label>
-      <button class="submit" type="button">Sign In</button>
+      <button class="submit" id="btnSignIn" runat="server" onclick="btnSignIn_ServerClick" type="button">Sign In</button>
+            </form>
       <p class="forgot-pass">Forgot Password ?</p>
 
       <div class="social-media">
@@ -51,24 +53,38 @@
         </div>
       </div>
       <div class="form sign-up">
+          <form id="signupForm" runat="server">
         <h2>Sign Up</h2>
         <label>
           <span>Name</span>
-          <input type="text"/>
+          <input type="text" id="txtSignUpName" runat="server"/>
+        </label>
+          <label>
+          <span>Address</span>
+          <input type="text" id="txtSignUpAddress" runat="server"/>
+        </label>
+          <label>
+          <span>Contact</span>
+          <input type="text" id="txtSignUpContact" runat="server"/>
+        </label>
+          <label>
+          <span>Username</span>
+          <input type="text" id="txtSignUpUsername" runat="server"/>
         </label>
         <label>
           <span>Email</span>
-          <input type="email"/>
+          <input type="email" id="txtSignUpEmail" runat="server"/>
         </label>
         <label>
           <span>Password</span>
-          <input type="password"/>
+          <input type="password" id="txtSignUpPassword1" runat="server"/>
         </label>
         <label>
           <span>Confirm Password</span>
-          <input type="password"/>
+          <input type="password" id="txtSignUpPassword2" runat="server"/>
         </label>
-        <button type="button" class="submit">Sign Up Now</button>
+        <button type="button" id="signupBtn" runat="server" onclass="submit" onserverclick="signupBtn_ServerClick">Sign Up Now</button>
+              </form>
       </div>
     </div>
   </div>

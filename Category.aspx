@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Item Category"></asp:Label>
+            <asp:Label ID="title" runat="server" Text="Item Category"></asp:Label>
         </div>
         <br />
         <br />

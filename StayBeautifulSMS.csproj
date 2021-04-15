@@ -151,7 +151,9 @@
     <Content Include="fonts\Roboto\Roboto-Thin.ttf" />
     <Content Include="fonts\Roboto\Roboto-ThinItalic.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="InactiveCustomers.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="PurchaseBill.aspx" />
     <Content Include="PurchaseForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -185,6 +187,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="StockForm.aspx" />
+    <Content Include="UnsoldItems.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -238,6 +241,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InactiveCustomers.aspx.cs">
+      <DependentUpon>InactiveCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InactiveCustomers.aspx.designer.cs">
+      <DependentUpon>InactiveCustomers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +256,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseBill.aspx.cs">
+      <DependentUpon>PurchaseBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseBill.aspx.designer.cs">
+      <DependentUpon>PurchaseBill.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PurchaseForm.aspx.cs">
       <DependentUpon>PurchaseForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,6 +290,13 @@
     </Compile>
     <Compile Include="StockForm.aspx.designer.cs">
       <DependentUpon>StockForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnsoldItems.aspx.cs">
+      <DependentUpon>UnsoldItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnsoldItems.aspx.designer.cs">
+      <DependentUpon>UnsoldItems.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
