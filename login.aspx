@@ -82,9 +82,9 @@
           <input type="password" id="txtSignUpPassword2" runat="server"/>
         </label>
         <button type="button" id="signupBtn" runat="server" onclass="submit" onserverclick="signupBtn_ServerClick">Sign Up Now</button>
-              </form>
+
       </div>
-    </div>
+    </div> </form>
   </div>
 <script type="text/javascript" src="Scripts/login.js"></script>
 </body>

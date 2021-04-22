@@ -62,7 +62,7 @@
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-building-o"></i>--%>
-                        <a href="#">Change Password</a>
+                        <a href="PasswordChange.aspx">Change Password</a>
                     </div>
                     <div class="sidebar__link">
                         <%--<i class="fa fa-wrench"></i>--%>

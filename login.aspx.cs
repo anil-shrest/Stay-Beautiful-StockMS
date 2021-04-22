@@ -40,8 +40,6 @@ namespace StayBeautifulSMS
                         con.Open();
                         cmd.ExecuteNonQuery();
                         con.Close();
-
-
                     }
                 }
             }
@@ -77,6 +75,25 @@ namespace StayBeautifulSMS
             if (password == pw)
             {
                 FormsAuthentication.RedirectFromLoginPage(email, true);
+                using (OleDbConnection con = new OleDbConnection(constr))
+                {
+                    using (OleDbCommand cmd = new OleDbCommand("SELECT * FROM [StockManagement].[dbo].[User] WHERE user_email = '" + email + "'"))
+                    {
+                        cmd.Connection = con;
+                        con.Open();
+                        var usr = cmd.ExecuteReader();
+                        usr.Read();
+                        Session["id"] = usr.GetInt32(0);
+                        Session["name"] = usr.GetString(1);
+                        Session["address"] = usr.GetString(2);
+                        Session["contact"] = usr.GetString(3);
+                        Session["username"] = usr.GetString(4);
+                        Session["user_email"] = usr.GetString(5);
+                        Session["user_password"] = usr.GetString(6);
+                        Session["user_type"] = usr.GetString(7);
+                        con.Close();
+                    }
+                }
             }
         }
     }
