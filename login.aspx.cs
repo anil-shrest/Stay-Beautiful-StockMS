@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace StayBeautifulSMS
 {
@@ -19,7 +20,6 @@ namespace StayBeautifulSMS
         
         protected void signupBtn_ServerClick(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("Hi");
             string name = Request.Form["txtSignUpName"];
             string username = Request.Form["txtSignUpUsername"];
             string address = Request.Form["txtSignUpAddress"];
@@ -53,6 +53,31 @@ namespace StayBeautifulSMS
                 System.Diagnostics.Debug.WriteLine("Password Fields Do Not Match");
             }
             
+        }
+
+        protected void btnSignIn_ServerClick(object sender, EventArgs e)
+        {
+            string email = Request.Form["txtEmail"];
+            string pw = Request.Form["txtPassword"];
+            string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            string password;
+            using (OleDbConnection con = new OleDbConnection(constr))
+            {
+                using (OleDbCommand cmd = new OleDbCommand("SELECT user_password FROM [StockManagement].[dbo].[User] WHERE user_email = '"+email+"'"))
+                {
+                    cmd.Connection = con;
+                    con.Open();
+                    var pwd = cmd.ExecuteReader();
+                    pwd.Read();
+                    password = pwd["user_password"].ToString();
+                    con.Close();
+                }
+            }
+
+            if (password == pw)
+            {
+                FormsAuthentication.RedirectFromLoginPage(email, true);
+            }
         }
     }
 }

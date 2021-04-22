@@ -14,18 +14,17 @@
   <div class="cont">
     <div class="form sign-in">
       <h2>Sign In</h2>
-        <form id="signin_form">
+        <form id="signin_form" runat="server">
       <label>
         <span>Email Address</span>
-        <input id="txtEmail" type="email" name="email"/>
+        <input id="txtEmail" type="email" name="email" runat="server"/>
       </label>
       <label>
         <span>Password</span>
-        <input id="txtPassword" type="password" name="password"/>
+        <input id="txtPassword" type="password" name="password" runat="server"/>
       </label>
-      <button class="submit" id="btnSignIn" runat="server" onclick="btnSignIn_ServerClick" type="button">Sign In</button>
-            </form>
-      <p class="forgot-pass">Forgot Password ?</p>
+      <button class="submit" id="btnSignIn" runat="server" onserverclick="btnSignIn_ServerClick" type="button">Sign In</button>
+   <p class="forgot-pass">Forgot Password ?</p>
 
       <div class="social-media">
         <ul>
@@ -53,7 +52,6 @@
         </div>
       </div>
       <div class="form sign-up">
-          <form id="signupForm" runat="server">
         <h2>Sign Up</h2>
         <label>
           <span>Name</span>
