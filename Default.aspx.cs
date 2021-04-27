@@ -11,7 +11,7 @@ namespace StayBeautifulSMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Debug.WriteLine(User.Identity.Name.ToString());
         }
     }
 }

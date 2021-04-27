@@ -3,18 +3,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <% if (Session["user_type"].ToString() == "Staff")
-            {%>
-            <div>
-                <asp:Label ID="Label7" runat="server" Text></asp:Label>
-            </div>
-        <%}
-    else
-    { %>
-            <div>
-                <asp:Label ID="Label8" runat="server" Text="Admin"></asp:Label>
-            </div>
-        <%} %>
         <div>
             <asp:Label ID="Label1" class="headings" runat="server" Text="Item Stock Details"></asp:Label>
         </div>

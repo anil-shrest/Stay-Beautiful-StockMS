@@ -47,30 +47,21 @@ namespace StayBeautifulSMS
                             con.Close();
                         }
                         string script = "alert(\"Password updated successfully\"); ";
-                        ClientScript.RegisterClientScriptBlock(this.GetType(), "ConfirmSubmit", script);
+                        ClientScript.RegisterOnSubmitStatement(this.GetType(), "ConfirmSubmit", script);
 
-                        ClientScript.RegisterOnSubmitStatement(this.GetType(),
-                                              "ConfirmSubmit", script);
-                        System.Diagnostics.Debug.WriteLine("Item quantity specified not available.");
                     }
                     else
                     {
                         string script = "alert(\"Password fields did not match\"); ";
-                        ClientScript.RegisterClientScriptBlock(this.GetType(), "ConfirmSubmit", script);
+                        ClientScript.RegisterOnSubmitStatement(this.GetType(), "ConfirmSubmit", script);
 
-                        ClientScript.RegisterOnSubmitStatement(this.GetType(),
-                                              "ConfirmSubmit", script);
-                        System.Diagnostics.Debug.WriteLine("Item quantity specified not available.");
                     }
                     
                 }
                 else
                 {
                     string script = "alert(\"Incorrect current password\"); ";
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "ConfirmSubmit", script);
-
-                    ClientScript.RegisterOnSubmitStatement(this.GetType(),
-                                          "ConfirmSubmit", script);
+                    ScriptManager.RegisterStartupScript(this.Page, GetType(), "ClosePopup", script, true);
                     System.Diagnostics.Debug.WriteLine("Item quantity specified not available.");
                 }
             }
