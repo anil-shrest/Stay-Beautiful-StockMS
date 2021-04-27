@@ -99,30 +99,30 @@
                             <div class="charts__right__title">
                                 <div>
                                     <h1>Stats Reports</h1>
-                                    <p>Cupertino, California, USA</p>
+                                    <p>Cupertino, Kathmandu, Nepal</p>
                                 </div>
                                 <i class="fa fa-usd" aria-hidden="true"></i>
                             </div>
 
                             <div class="charts__right__cards">
                                 <div class="card1">
-                                    <h1>Income</h1>
-                                    <p>$75,300</p>
+                                    <h1>Brands</h1>
+                                    <p id ="brands" runat="server" class="stats"></p>
                                 </div>
 
                                 <div class="card2">
-                                    <h1>Sales</h1>
-                                    <p>$124,200</p>
+                                    <h1>Items</h1>
+                                    <p id ="items" runat="server" class="stats"></p>
                                 </div>
 
                                 <div class="card3">
-                                    <h1>Users</h1>
-                                    <p>3900</p>
+                                    <h1>Purchases</h1>
+                                    <p id ="purchases" runat="server" class="stats"></p>
                                 </div>
 
                                 <div class="card4">
-                                    <h1>Orders</h1>
-                                    <p>1881</p>
+                                    <h1>Customers</h1>
+                                    <p id ="customers" runat="server" class="stats"></p>
                                 </div>
                             </div>
                         </div>
